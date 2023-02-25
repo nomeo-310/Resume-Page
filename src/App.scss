@@ -1,0 +1,47 @@
+@font-face {
+    font-family: SignikaNegative-Bold;
+    src: url(./font/SignikaNegative-Bold.ttf);
+}
+@font-face {
+    font-family: SignikaNegative-Light;
+    src: url(./font/SignikaNegative-Light.ttf)
+}
+@font-face {
+    font-family: SignikaNegative-Medium;
+    src: url(./font/SignikaNegative-Medium.ttf)
+}
+@font-face {
+    font-family: SignikaNegative-Regular;
+    src: url(./font/SignikaNegative-Regular.ttf)
+}
+@font-face {
+    font-family: SignikaNegative-SemiBold;
+    src: url(./font/SignikaNegative-SemiBold.ttf)
+}
+@font-face {
+    font-family: Urbanist-Regular;
+    src: url(./font/Urbanist-Regular.ttf)
+}
+@font-face {
+    font-family: Urbanist-Medium;
+    src: url(./font/Urbanist-Medium.ttf)
+}
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Urbanist-Regular';
+}
+.app {
+    .link {
+        text-decoration: none;
+        color: inherit;
+    }
+    .container {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
