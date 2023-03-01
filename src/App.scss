@@ -28,7 +28,6 @@
 }
 
 * {
-
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -36,12 +35,107 @@
     font-family: 'Urbanist-Regular';
 }
 .app {
-    .link {
-        text-decoration: none;
-        color: inherit;
+    section {
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        // margin-top: 50px;
     }
-    .container {
-        width: 85%;
-        margin: 0 auto;
+    section.white-bg {
+        background: #fff;
+    }
+    section.padding {
+        padding: 80px 56px;
+    }
+    section.padding-50 {
+        padding: 50px;
+    }
+    section.padding-60 {
+        padding: 60px 50px;
+    }
+    .background {
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    .btn {
+        border-radius: 100px;
+        font-size: 14px;
+        font-weight: 400;
+        overflow: hidden;
+        padding: 8.5px 20px;
+        position: relative;
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+        transition: all 0.3s ease-in-out;
+        span {
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        &:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+    .btn-default {
+        color: #fff;
+        background: #ff5959;
+        &:hover {
+            background: #4a63e7;
+            -webkit-transform: translateX(-3px);
+            -moz-transform: translateX(-3px);
+            -ms-transform: translateX(-3px);
+            -o-transform: translateX(-3px);
+            transform: translateX(-3px);
+            -webkit-box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+            -moz-box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+            -ms-box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+            -o-box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+        }
+        &:hover:not([href]):not([tabIndex]) {
+            color: #fff;
+        }
+        &:not([href]):not([tabIndex]) {
+            color: #fff;
+        }
+    }
+    .btn-border-light {
+        color: #fff;
+        border: 1px solid #fff;
+        background: transparent;
+
+        &:hover {
+            color: #000;
+            background: #fff;
+            -webkit-transform: translateX(-3px);
+            -moz-transform: translateX(-3px);
+            -ms-transform: translateX(-3px);
+            -o-transform: translateX(-3px);
+            transform: translateX(-3px);
+            -webkit-box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+            -moz-box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+            -ms-box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+            -o-box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+        }
+        &:hover span {
+            color: #000;
+        }
+        &:hover:not([href]):not([tabIndex]) {
+            color: #000;
+        }
+        &:not([href]):not([tabIndex]) {
+            color: #fff;
+        }
+    }
+    .dot::after {
+        content: "";
+        display: inline-block;
+        background: #ff5959;
+        border-radius: 50%;
+        margin-left: 5px;
     }
 }
