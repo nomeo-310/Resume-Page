@@ -1,0 +1,14 @@
+.section-header {
+   .section-title {
+    margin: 0;
+    &::after {
+        content: '';
+        background: #ff5959;
+        border-radius: 25px;
+        display: block;
+        height: 5px;
+        margin-top: 14px;
+        width: 35px;
+    }
+   }
+}

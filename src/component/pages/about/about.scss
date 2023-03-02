@@ -1,0 +1,19 @@
+.about {
+    img {
+        border-radius: 50%;
+    }
+    a.btn-default:hover {
+        color: #fff;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .about {
+        img {
+           width: 250px;
+           height: 250px;
+        }
+        a.btn-default:hover {
+            color: #fff;
+        }
+    }
+}

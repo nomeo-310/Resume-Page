@@ -29,7 +29,7 @@ const HeroSection = () => {
           >
             <span className='mdi mdi-cog'></span>View Portfolio
         </ScrollLink>
-        {/* <div className='spacer d-md-none d-lg-none d-sm-none' data-height='10'></div> */}
+        <div className='spacer d-md-none d-lg-none d-sm-none' data-height='10'></div>
         <ScrollLink 
           activeClass='active'
           to='section-portfolios'

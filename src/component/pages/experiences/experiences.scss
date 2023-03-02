@@ -1,0 +1,67 @@
+.experiences {
+    position: relative;
+    padding: 70px 0;
+    .time-line {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: calc(20% + 2px);
+        width: 1px;
+        background: #ff5959;
+        &::before,
+        &::after {
+            content: '';
+            display: block;
+            border-radius: 100%;
+            background: #ff5959;
+            position: absolute;
+            left: -3px;
+            height: 7px;
+            width: 7px;
+        }
+        &::before {
+            top: 0;
+        }
+        &::after {
+            bottom: 0;
+            display: table;
+            clear: both;
+        }
+    }
+    .experience {
+        clear: both;
+        position: relative;
+        &:last-of-type {
+            .body {
+                margin-bottom: 0;
+            }
+        }
+        .title {
+            float: left;
+            width: 20%;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                border: 1px solid #ff5959;
+                background: #fff;
+                border-radius: 100%;
+                padding: 4.5px;
+                top: 15%;
+                right: -8px;
+                z-index: 1;
+            }
+        }
+        .body {
+            margin: 0 0 6em;
+            float: right;
+            width: 80%;
+            padding-left: 60px;
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
