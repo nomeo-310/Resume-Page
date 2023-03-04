@@ -5,7 +5,7 @@ const Service = ({service: {name, content, icon}}) => {
     <div className='service text-center'>
       <span className={`mdi ${icon} icon-simple`}></span>
       <h4 className='my-3'>{name}</h4>
-      <p className='mb-0'>{content.substring(1,90)}</p>
+      <p className='mb-0'>{content.substring(1,120)}</p>
     </div>
   )
 }

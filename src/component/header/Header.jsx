@@ -120,11 +120,11 @@ const Header = ({toggleHeader, toggleHandler}) => {
                                 spy={true} smooth={true} 
                                 offset={-50} 
                                 duration={500}>
-                                    <span className="mdi mdi-cog-outline"></span> Works
+                                    <span className="mdi mdi-view-grid-outline"></span> Works
                                 </ScrollLink>
                                 ) 
                                 : (
-                                <Link to='/'><span className="mdi mdi-cog-outline"></span> Works</Link>
+                                <Link to='/'><span className="mdi mdi-view-grid-outline"></span> Works</Link>
                                 )
                             }
                         </li>

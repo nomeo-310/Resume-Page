@@ -10,6 +10,10 @@ import FunFacts from '../pages/fun-facts/FunFacts';
 import Services from '../pages/services/Services';
 import Experiences from '../pages/experiences/Experiences';
 import Portfolios from '../pages/portfolios/Portfolios';
+import PricingTable from '../pages/pricing-table/PricingTable';
+import Testimonials from '../pages/testimonials/Testimonials';
+import Blogs from '../pages/blog/Blogs';
+import Contact from '../pages/contact/Contact';
 
 const Home = () => {
   useEffect(() => {
@@ -53,6 +57,30 @@ const Home = () => {
           <section className='shadow-blue white-bg padding'>
             <SectionHeader title='Portfolios'/>
             <Portfolios/>
+          </section>
+        </Element>
+        <Element name='section-pricing'>
+          <section className='shadow-blue white-bg padding'>
+            <SectionHeader title='Pricing Table'/>
+            <PricingTable/>
+          </section>
+        </Element>
+        <Element name='section-testimonials'>
+          <section className='shadow-blue white-bg padding'>
+            <SectionHeader title='Testimonials'/>
+            <Testimonials/>
+          </section>
+        </Element>
+        <Element name='section-blogs'>
+          <section className='shadow-blue white-bg padding'>
+            <SectionHeader title='Recent Posts'/>
+            <Blogs/>
+          </section>
+        </Element>
+        <Element name='section-contact'>
+          <section className='shadow-blue white-bg padding'>
+            <SectionHeader title='Contact Me'/>
+            <Contact/>
           </section>
         </Element>
       </Layout>
